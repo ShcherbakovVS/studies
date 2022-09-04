@@ -3,68 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <title>Vlad CV</title>
+    <link href="styles.css", rel='stylesheet'/>
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td><img src="avatarka.jpg" width="200" alt="Здесь изображен я"/></td>
-        <td><h1>Владислав Щербаков</h1>
-          <p>
-            <em>Я начинающий <strong>веб-разработчик</strong></em>
-          </p>
-          <p>Я люблю путешествовать, заниматься спортом и программировать</p></td>
-      </tr>
-    </table>
-    <hr>
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li><a href="https://instagram.com/vs.ural" target="_blank">Instagram</a></li>
-      <li><a href="https://t.me/Vlados66" target="_blank">Telegram</a></li>
-    </ul>
-    <hr>
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Путешествие</li>
-      <li>Спорт: бег, лыжи, плавание, фитнес</li>
-      <li>Английкий</li>
-      <li>Чтение</li>
-    </ol>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-      <th>Год</th>
-      </tr>
-        <tr>
-        <td>СКБ-Контур</td>
-        <td>Инженер-разработчик</td>
-        <td>2016-2017</td>
-      </tr>
-      <tr>
-        <td>Банк-открытие</td>
-        <td>Frontend-разработчик</td>
-        <td>2017-2019</td>
-      </tr>
-    </table>
-    <hr>
-    <h2>Портфолио</h2>
-    <a href="portfolio.html">Посмотреть список</a>
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Начните вводить ваше имя...">
-      <br>
-      <label for="email">Ваше email:</label>
-      <input type="email" id="email" placeholder="Начните вводить ваш email...">
-      <br>
-      <label for="text">Ваше сообщение:</label>
-      <br>
-      <textarea id="text" rows="2" cols="15"></textarea>
-      <br>
-      <input type="submit" value="Связаться">
-    </form>
+    <div class="container">
+      <div class="info">
+        <img src="avatarka.jpg" alt="Здесь изображен я" class="avatar"/>
+        <div class="info-text">
+          <h1>Владислав Щербаков</h1>
+          <p>Я начинающий <strong>веб-разработчик</strong></p>
+          <p>Я люблю путешествовать, заниматься спортом и программировать</p>
+          <h4>Мои социальные сети</h4>
+          <a href="https://instagram.com/vs.ural" target="_blank">Instagram</a>
+          |
+          <a href="https://t.me/Vlados66" target="_blank">Telegram</a>
+        </div>
+      </div>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Путешествие</li>
+          <li>Спорт: бег, лыжи, плавание, фитнес</li>
+          <li>Английкий</li>
+          <li>Чтение</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>УрФУ</td>
+            <td>Инженер-разработчик</td>
+            <td>2015 - 2016</td>
+          </tr>
+          <tr>
+            <td>СКБ-Контур</td>
+            <td>Инженер-разработчик</td>
+            <td>2016 - 2017</td>
+          </tr>
+          <tr>
+            <td>Банк-открытие</td>
+            <td class="temp">Frontend-разработчик</td>
+            <td class="temp">2017 - 2019</td>
+          </tr>
+          <tr>
+            <td>Scherbakov</td>
+            <td>Freelance</td>
+            <td>2019 - now</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <h2>Портфолио</h2>
+        <ul class="link-list">
+          <li>
+              <a href="https://www.e1.ru/">Новостной сайт</a>
+          </li>
+          <li>
+            <a href="https://yandex.ru/">Поисковик</a>
+        </li>
+      </ul>
+      </div>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Начните вводить ваше имя...">
+            </div>
+            <div class="form-group">
+              <label for="email">Ваше email:</label>
+              <input type="email" id="email" placeholder="Начните вводить ваш email...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Связаться">
+        </form>
+      </div>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
+
+
+    <div style="margin-bottom: 500px"></div>
   </body>
 </html>
